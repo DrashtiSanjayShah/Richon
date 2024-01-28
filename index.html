@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agro Company</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 4000);
+    </script>
+  </head>
+
+  <body>
+    <!-- banner start -->
+
+    <div class="banner">
+      <p>
+        <span>Welcome to Richon Agro!</span> Got Questions? Contact US:
+        9999999999
+      </p>
+    </div>
+    <!-- Header Section -->
+    <header>
+      <a href="index.html">
+        <img src="images/tempmainlogoblack.png" alt="main logo" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="home" id="home">
+      <!-- <h1>Welcome to <span>Richon Agro</span></h1>
+      <p>Your Trusted Partner in Agriculture</p> -->
+      <!-- <img src="images/hero-image1.jpeg" alt="Image 1" class="banner-image" id="bannerImage"> -->
+
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <div class="slide first">
+            <img
+              src="images/orange.png"
+              alt="Image 1"
+              class="banner-image"
+              id="bannerImage"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="images/red.png"
+              alt="Image 2"
+              class="banner-image"
+              id="bannerImage"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="images/pink.png"
+              alt="Image 3"
+              class="banner-image"
+              id="bannerImage"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="images/blue.png"
+              alt="Image 4"
+              class="banner-image"
+              id="bannerImage"
+            />
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
+    </section>
+    <!-- hero ends here -->
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <div class="intro">
+        <ul class="box-list">
+          <li class="box-item" onclick="showImage('founding')">
+            <a>Founding and Evolution</a>
+          </li>
+          <li class="box-item" onclick="showImage('core')">
+            <a>Core Focus and Achievements</a>
+          </li>
+          <li class="box-item" onclick="showImage('values')">
+            <a>Values and Culture</a>
+          </li>
+          <li class="box-item" onclick="showImage('commitment')">
+            <a>Commitment and Vision</a>
+          </li>
+        </ul>
+
+        <div id="image-container">
+          <img
+            id="image-placeholder"
+            src="images/default-image.jpeg"
+            alt="Image Placeholder"
+          />
+        </div>
+        <div id="text-container">
+          <p id="text-placeholder">Richon Agro.</p>
+        </div>
+      </div>
+      <!-- <img src="images/about-image.webp" alt="About Us" /> -->
+
+      <!-- Add more content as needed -->
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <h2>Our Products</h2>
+      <h3>Best Sellers</h3>
+      <div class="pro-container">
+        <div class="pro">
+          <a href="pro1.html"><img src="images/pro1.jpeg" /></a>
+          <div class="desc">
+            <span>Pro name</span>
+            <h5>Pro category</h5>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Rs.</h4>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="images/pro1.jpeg" />
+          <div class="desc">
+            <span>Pro name</span>
+            <h5>Pro category</h5>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Rs.</h4>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="images/pro1.jpeg" />
+          <div class="desc">
+            <span>Pro name</span>
+            <h5>Pro category</h5>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Rs.</h4>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="images/pro1.jpeg" />
+          <div class="desc">
+            <span>Pro name</span>
+            <h5>Pro category</h5>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Rs.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products" class="products">
+      <h2>Category 1</h2>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="images/pro1.jpeg" />
+          <div class="desc">
+            <span>Pro name</span>
+            <h5>Pro category</h5>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Rs.</h4>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="images/pro1.jpeg" />
+          <div class="desc">
+            <span>Pro name</span>
+            <h5>Pro category</h5>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Rs.</h4>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="images/pro1.jpeg" />
+          <div class="desc">
+            <span>Pro name</span>
+            <h5>Pro category</h5>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Rs.</h4>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="images/pro1.jpeg" />
+          <div class="desc">
+            <span>Pro name</span>
+            <h5>Pro category</h5>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h4>Rs.</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more products as needed -->
+    </section>
+    <!-- FAQ section starts -->
+
+    <!-- Chatbot Icon -->
+    <!-- <div class="faq">
+<div id="chatIcon" class="chat-icon">
+  <i class="fas fa-comment"></i>
+  <div id="unreadCount" class="unread-count">1</div>
+</div> -->
+
+    <!-- Chatbot Container  -->
+    <!-- <div id="chatContainer" class="chat-container resizable">
+      <div id="resizer"></div>
+      <div id="chatHeader" class="chat-header">
+        <span>Chatbot</span>
+        <i id="closeBtn" class="fas fa-times"></i>
+      </div>
+      <div id="chatMessages" class="chat-messages">
+         Chat messages will be added here dynamically -->
+      <!-- </div>
+      <div id="chatInput" class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your message...">
+  </div>
+    </div>  -->
+
+    <!-- FAQ ends -->
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-logo">
+        <a href="index.html">
+          <img
+            src="images/footerlogo.png"
+            alt="white logo with no bg"
+            class="footer-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-container">
+        <div class="footer-links-left">
+          <p>About Us</p>
+          <ul>
+            <li><a href="about.html">Company</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>Affiliates</li>
+          </ul>
+        </div>
+        <div class="footer-links-center">
+          <p>Useful Links</p>
+          <ul>
+            <li><a href="contact.html">Support</a></li>
+
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href=""> Stories</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-right">
+          <p>Products</p>
+          <ul>
+            <li>Best Sellers</li>
+            <li>cat1</li>
+            <li>cat2</li>
+            <li>cat3</li>
+          </ul>
+          <!-- <div class="fMenu">
+          <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+          <div class="fMail">
+            <input type="text" placeholder="your@email.com" class="fInput" />
+            <button class="fButton">Join!</button>
+          </div>
+        </div> -->
+          <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <p class="copy">&copy; 2023 Your Company. All rights reserved.</p>
+
+    <!-- footer ends -->
+    <script src="script.js"></script>
+  </body>
+</html>
