@@ -145,11 +145,14 @@ nav a:hover {
 .slide {
   width: 20%;
   transition: 2s;
+  height: 600px;
 }
 
 .slide img {
-  width: 1900px;
-  height: 600px;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .navigation-manual {
